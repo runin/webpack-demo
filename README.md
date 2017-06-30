@@ -1,8 +1,8 @@
 # webpack-demo
-##一、Node 安装与使用
+## 一、Node 安装与使用
 <p>官网下载node lts版本（稳定版）</p>
 
-##二、webpack 安装与使用
+## 二、webpack 安装与使用
 找个目录建立文件夹
 
 $ cd webpack-demo
@@ -67,7 +67,7 @@ $ node_modules/.bin/webpack app/index.js build/build.js
 
 这个是使用webpack的打包方式 将app里面的index.js 打包输出到 build文件里build.js
 
-##三、webpack 初体验
+## 三、webpack 初体验
 
 重新创建一个项目目录。eg:004
 
@@ -79,7 +79,8 @@ $ node_modules/.bin/webpack app/index.js build/build.js
 
 在component.js中写入
 
-```export default (text="hello world") => {
+```
+export default (text="hello world") => {
 	const element = document.createElement('div');
 	element.innerHTML = text;
 
@@ -89,7 +90,8 @@ $ node_modules/.bin/webpack app/index.js build/build.js
 
 在index.js中写入
 
-```import component from './component.js';
+```
+import component from './component.js';
 document.body.appendChild(component());
 ```
 
@@ -137,7 +139,7 @@ $ node_modules/.bin/webpack
 
 build中的build.js 是从003里面复制过来的，删掉不影响
 
-##四、webpack 编译输出的日志
+## 四、webpack 编译输出的日志
 ```
 eg:
 Hash: dba4fb3819dee0d8ec5a
@@ -162,7 +164,7 @@ Time: 编译耗时
 
 编译成app.js 及 index.html。用到index.js 和component.js 、html-webpack-plugin插件等资源进行的编译的结果
 
-##五、使用快捷方式进行编译
+## 五、使用快捷方式进行编译
 
 如果全局安装的webpack可以直接使用命令：
 
@@ -221,7 +223,7 @@ available via `npm run-script`:
 
 这节主要讲了，使用快捷命令 npm run build 进行编译，及快捷命令的配置
 
-##六、浏览器自动刷新
+## 六、浏览器自动刷新
 
 浏览器自动刷新首先需要安装一个组件命令为：
 
