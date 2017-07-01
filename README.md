@@ -288,6 +288,6 @@ $ npm install --save-dev eslint
 "lintjs": "eslint app/webapack.*.js --cache"
 ```
 
-使用lintjs命令,参数eslint ，我们需要app目录做一个编译,webapack.*.js是一个正则的写法
+  使用lintjs命令,参数eslint ，我们需要app目录做一个编译,webapack.*.js是一个正则的写法.
 
 
